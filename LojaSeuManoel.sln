@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -12,6 +12,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaSeuManoel.Domain", "src\LojaSeuManoel.Domain\LojaSeuManoel.Domain.csproj", "{5D6C1072-9A1D-4A30-841F-101E45F13F31}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaSeuManoel.Tests", "src\LojaSeuManoel.Tests\LojaSeuManoel.Tests.csproj", "{4A07DD8C-786A-483E-BAFD-9A6676A1719B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{380A7511-A354-6D7A-0CC0-8FA1F1BA7B6C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaSeuManoel.Infrastructure", "src\LojaSeuManoel.Infrastructure\LojaSeuManoel.Infrastructure.csproj", "{9896B167-A25F-9105-640C-9BE98A15980B}"
 EndProject
