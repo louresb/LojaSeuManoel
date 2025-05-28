@@ -17,6 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LojaSeuManoel.Application\LojaSeuManoel.Application.csproj" />
+    <ProjectReference Include="..\LojaSeuManoel.Domain\LojaSeuManoel.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
