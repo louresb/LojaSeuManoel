@@ -5,8 +5,10 @@ public class Pedido
     public Guid Id { get; set; } = Guid.NewGuid();
     public List<Produto> Produtos { get; set; } = new();
 
+    public Pedido() { }
+
     public Pedido(List<Produto> produtos)
     {
-        Produtos = produtos;
+        Produtos = produtos ?? new List<Produto>();
     }
 }
