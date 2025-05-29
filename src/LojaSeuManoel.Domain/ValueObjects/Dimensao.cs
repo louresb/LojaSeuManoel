@@ -2,11 +2,13 @@
 
 public class Dimensao
 {
-    public int Altura { get; }
-    public int Largura { get; }
-    public int Comprimento { get; }
+    public int Altura { get; private set; }
+    public int Largura { get; private set; }
+    public int Comprimento { get; private set; }
 
     public int Volume => Altura * Largura * Comprimento;
+
+    public Dimensao() { }
 
     public Dimensao(int altura, int largura, int comprimento)
     {
@@ -18,8 +20,7 @@ public class Dimensao
         Comprimento = comprimento;
     }
 
-    public override string ToString()
-        => $"{Altura}x{Largura}x{Comprimento}";
+    public override string ToString() => $"{Altura}x{Largura}x{Comprimento}";
 
     public override bool Equals(object? obj)
     {
@@ -29,6 +30,5 @@ public class Dimensao
                Comprimento == other.Comprimento;
     }
 
-    public override int GetHashCode()
-        => HashCode.Combine(Altura, Largura, Comprimento);
+    public override int GetHashCode() => HashCode.Combine(Altura, Largura, Comprimento);
 }
